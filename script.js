@@ -48,7 +48,12 @@ function wrong(){
     pattern = [];
 }
 
-// Keypress
+// Keypress and Start Game
+function startGame(){
+    if(num <= 0){
+        nextSequence(btnColours);
+    }
+}
 
 $(document).keypress(function(){
     if(num <= 0){
